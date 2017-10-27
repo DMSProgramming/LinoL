@@ -6,13 +6,12 @@ void setup(){
 }
 
 
-color fillVal = color(126);
-
+var player = {x:0,y:0};
 
 
 void draw() {
 
-  fill(fillVal);
+  fill(100);
 
   rect(25, 25, 50, 50);
 
@@ -26,17 +25,21 @@ void keyPressed() {
 
     if (keyCode == UP) {
 
-      fillVal = 255;
+      y--;
 
-    } else if (keyCode == DOWN) {
+    }else if (keyCode == DOWN) {
 
-      fillVal = 0;
+      y++;
+
+    }else if (keyCode == LEFT) {
+
+      x--;
+
+    }else if (keyCode == RIGHT) {
+
+      x++;
 
     } 
-
-  } else {
-
-    fillVal = 126;
 
   }
 
