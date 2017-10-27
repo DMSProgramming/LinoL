@@ -13,7 +13,7 @@ void draw() {
 
   fill(100);
 
-  rect(x, y, 50, 50);
+  rect(player.x, player.y, 50, 50);
 
 }
 
@@ -25,19 +25,19 @@ void keyPressed() {
 
     if (keyCode == UP) {
 
-      y--;
+      player.y--;
 
     }else if (keyCode == DOWN) {
 
-      y++;
+      player.y++;
 
     }else if (keyCode == LEFT) {
 
-      x--;
+      player.x--;
 
     }else if (keyCode == RIGHT) {
 
-      x++;
+      player.x++;
 
     } 
 
