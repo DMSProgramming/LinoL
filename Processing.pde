@@ -10,7 +10,7 @@ var player = {x:25,y:25,speed:3};
 
 
 void draw() {
-  background(255);
+  background(0);
 
   fill(100);
 
