@@ -6,7 +6,7 @@ void setup(){
 }
 
 
-var player = {x:25,y:25,speed:20};
+var player = {x:25,y:25,speed:3};
 
 
 void draw() {
