@@ -10,19 +10,21 @@ void setup(){
 }
 
 var x = 0;
-var direction = "Right";
 
 void draw() {
   background(100);
   rect(x,10,10,10);
   if(x<=0){
-    direction = "Right";
+    x=0;
   }else if(x>=395){
-    direction = "Left";
+    x=395;
   }
-  if(direction==="Right"){
-    x++;
-  }else if(direction==="Left"){
-    x--;
+  if(y<=0){
+    y=0;
+  }else if(y>=395){
+    y=395;
+  }
+  if(keyCode===UP){
+    y--;
   }
 }
