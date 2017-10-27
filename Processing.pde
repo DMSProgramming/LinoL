@@ -6,14 +6,14 @@ void setup(){
 }
 
 
-var player = {x:0,y:0};
+var player = {x:25,y:25};
 
 
 void draw() {
 
   fill(100);
 
-  rect(25, 25, 50, 50);
+  rect(x, y, 50, 50);
 
 }
 
