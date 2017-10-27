@@ -6,13 +6,38 @@ void setup(){
 }
 
 
-var turn = 0;
+color fillVal = color(126);
+
+
 
 void draw() {
-  background(100);
-  fill(0,0,0);
-  translate(58, 48, 0); 
-  rotateY(turn);
-  box(40);
-  turn+=0.1;
+
+  fill(fillVal);
+
+  rect(25, 25, 50, 50);
+
+}
+
+
+
+void keyPressed() {
+
+  if (key == CODED) {
+
+    if (keyCode == UP) {
+
+      fillVal = 255;
+
+    } else if (keyCode == DOWN) {
+
+      fillVal = 0;
+
+    } 
+
+  } else {
+
+    fillVal = 126;
+
+  }
+
 }
