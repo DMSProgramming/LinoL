@@ -6,10 +6,11 @@ void setup(){
 }
 
 
-var player = {x:25,y:25};
+var player = {x:25,y:25,speed:20};
 
 
 void draw() {
+  background(255);
 
   fill(100);
 
@@ -25,19 +26,19 @@ void keyPressed() {
 
     if (keyCode == UP) {
 
-      player.y--;
+      player.y-=player.speed;
 
     }else if (keyCode == DOWN) {
 
-      player.y++;
+      player.y+=player.speed;
 
     }else if (keyCode == LEFT) {
 
-      player.x--;
+      player.x-=player.speed;
 
     }else if (keyCode == RIGHT) {
 
-      player.x++;
+      player.x+=player.speed;
 
     } 
 
