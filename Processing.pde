@@ -7,13 +7,20 @@ void setup(){
 
 
 var player = {x:25,y:25,speed:3};
-var keyIsPressed = false;
+
 
 void draw() {
   background(0);
-
+  player.y--;
   fill(100);
-  if(keyIsPressed){
+  rect(player.x, player.y, 50, 50);
+  
+}
+
+
+
+void keyPressed() {
+  
     if (key == CODED) {
 
       if (keyCode == UP) {
@@ -35,13 +42,4 @@ void draw() {
       } 
 
     }
-  }
-  rect(player.x, player.y, 50, 50);
-  keyIsPressed=false;
-}
-
-
-
-void keyPressed() {
-  keyIsPressed=true;
 }
