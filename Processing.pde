@@ -13,26 +13,28 @@ void draw() {
   background(0);
 
   fill(100);
-  if (key == CODED) {
+  if(keyIsPressed){
+    if (key == CODED) {
 
-    if (keyCode == UP) {
+      if (keyCode == UP) {
 
-      player.y-=player.speed;
+        player.y-=player.speed;
 
-    }else if (keyCode == DOWN) {
+      }else if (keyCode == DOWN) {
 
-      player.y+=player.speed;
+        player.y+=player.speed;
 
-    }else if (keyCode == LEFT) {
+      }else if (keyCode == LEFT) {
 
-      player.x-=player.speed;
+        player.x-=player.speed;
 
-    }else if (keyCode == RIGHT) {
+      }else if (keyCode == RIGHT) {
 
-      player.x+=player.speed;
+        player.x+=player.speed;
 
-    } 
+      } 
 
+    }
   }
   rect(player.x, player.y, 50, 50);
   keyIsPressed=false;
